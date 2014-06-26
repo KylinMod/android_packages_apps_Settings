@@ -60,4 +60,18 @@
     <string name="custom_carrier_label_explain">請輸入新的運營商名稱，留空為恢復默認運營商名稱。</string>
     <string name="custom_carrier_label_notset">當前沒有設置運營商名稱</string>
 
+    <!-- Navigation Bar -->
+    <string name="navigation_bar_edit_title">按鍵與佈局</string>
+    <string name="navigation_bar_edit_summary">編輯導航欄按鍵佈局</string>
+    <string name="navigation_bar_height">導航欄高度</string>
+    <string name="navigation_bar_height_48">48dp (默認)</string>
+    <string name="navigation_bar_height_44">44dp</string>
+    <string name="navigation_bar_height_40">40dp</string>
+    <string name="navigation_bar_height_36">36dp</string>
+    <string name="navigation_bar_height_32">32dp</string>
+    <string name="navigation_bar_height_28">28dp</string>
+    <string name="navigation_bar_height_24">24dp</string>
+    <string name="navigation_bar_height_0">隱藏</string>
+    <string name="navigation_ring_summary">編輯導航欄快捷方式</string>  
+
 </resources>
