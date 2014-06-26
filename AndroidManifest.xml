@@ -1765,6 +1765,8 @@
         <!-- KylinMod activities Start -->	
         <activity android:name=".kylinmod.KylinNavbar" />
 
+        <activity android:name=".kylinmod.StatusBarClockStyle" />
+
         <activity android:name="Settings$KylinSettingsActivity"
                 android:label="@string/kylin_settings_title"
                 android:taskAffinity=""
@@ -1897,8 +1899,6 @@
         <activity android:name=".notificationlight.NotificationLightSettings" />
 
         <activity android:name=".notificationlight.BatteryLightSettings" />
-
-        <activity android:name=".cyanogenmod.LockscreenInterface" />
 
         <activity android:name=".cyanogenmod.StatusBar" />
 
