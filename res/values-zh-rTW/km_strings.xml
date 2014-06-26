@@ -18,5 +18,18 @@
 
     <!-- KylinMod Settings -->
     <string name="kylin_settings_title">麒麟控</string>
- 
+    <string name="category_others_title">其它</string>
+
+    <!-- Network traffic -->
+    <string name="network_traffic_title">網絡流量</string>
+    <string name="show_network_traffic_state">狀態欄流量監控</string>
+    <string name="show_network_traffic_unit">單元顯示</string>
+    <string name="show_network_traffic_frequency">更新間隔</string>
+    <string name="show_network_traffic_disable">關閉</string>
+    <string name="show_network_traffic_up">僅顯示上傳速度</string>
+    <string name="show_network_traffic_down">僅顯示下載速度</string>
+    <string name="show_network_traffic_all">顯示上傳和下載速度</string>
+    <string name="show_network_traffic_bit">Bit/s</string>
+    <string name="show_network_traffic_byte">Byte/s</string>
+
 </resources>
