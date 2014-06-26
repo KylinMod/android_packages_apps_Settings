@@ -79,10 +79,8 @@ import com.android.settings.blacklist.BlacklistSettings;
 import com.android.settings.bluetooth.BluetoothEnabler;
 import com.android.settings.bluetooth.BluetoothSettings;
 import com.android.settings.cyanogenmod.ButtonSettings;
-import com.android.settings.cyanogenmod.LockscreenInterface;
 import com.android.settings.cyanogenmod.PerformanceSettings;
-import com.android.settings.cyanogenmod.StatusBar;
-import com.android.settings.cyanogenmod.NotificationDrawer;
+import com.android.settings.kylinmod.KylinSettings;
 import com.android.settings.cyanogenmod.superuser.PolicyNativeFragment;
 import com.android.settings.deviceinfo.Memory;
 import com.android.settings.deviceinfo.UsbSettings;
@@ -185,9 +183,8 @@ public class Settings extends PreferenceActivity
             R.id.nfc_payment_settings,
             R.id.home_settings,
             R.id.interface_section,
-            R.id.status_bar_settings,
-            R.id.notification_bar_settings,
             R.id.lock_screen_settings,
+            R.id.kylin_settings,
             R.id.privacy_settings_cyanogenmod,
             R.id.button_settings
     };
@@ -380,9 +377,7 @@ public class Settings extends PreferenceActivity
         BlacklistSettings.class.getName(),
         ApnSettings.class.getName(),
         HomeSettings.class.getName(),
-        LockscreenInterface.class.getName(),
-        StatusBar.class.getName(),
-        NotificationDrawer.class.getName(),
+        KylinSettings.class.getName(),
         ButtonSettings.class.getName(),
         ProfilesSettings.class.getName(),
         PerformanceSettings.class.getName(),
@@ -1257,6 +1252,7 @@ public class Settings extends PreferenceActivity
     public static class ApnSettingsActivity extends Settings { /* empty */ }
     public static class ApnEditorActivity extends Settings { /* empty */ }
     public static class BlacklistSettingsActivity extends Settings { /* empty */ }
+    public static class KylinSettingsActivity extends Settings { /* empty */ }
     public static class SystemSettingsActivity extends Settings { /* empty */ }
     public static class QuickSettingsConfigActivity extends Settings { /* empty */ }
     public static class QuietHoursSettingsActivity extends Settings { /* empty */ }
