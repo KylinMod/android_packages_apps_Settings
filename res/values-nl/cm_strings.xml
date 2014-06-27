@@ -207,7 +207,7 @@
   <string name="lockscreen_enable_camera_title">Camera-widget</string>
   <string name="safe_headset_volume_title">Veilig headsetvolume</string>
   <string name="cyanogenmod_waiver_title">Afstandsverklaring</string>
-  <string name="cyanogenmod_waiver_body">Het wijzigen van deze instelling kan in overtreding zijn met de regelgeving in uw staat/land.\n\nDoor te tikken op \'OK\' erkent u deze waarschuwing en doet u afstand van en vrijwaart u CyanogenMod en/of haar bijdragers van alle wettelijke verplichtingen</string>
+  <string name="cyanogenmod_waiver_body">Het wijzigen van deze instelling kan in overtreding zijn met de regelgeving in uw staat/land.\n\nDoor te tikken op \'OK\' erkent u deze waarschuwing en doet u afstand van en vrijwaart u KylinMod en/of haar bijdragers van alle wettelijke verplichtingen</string>
   <string name="quick_settings_panel_title">Snelle instellingenpaneel</string>
   <string name="title_static_tiles">Statische tegels</string>
   <string name="tile_picker_title">Tegels en indeling</string>
@@ -354,16 +354,16 @@ Extra opties zijn beschikbaar door een regel lang aan te raken. Door \'Aanpassen
   <string name="quiet_hours_ringer_mute_all">Stil bij alle oproepen</string>
   <string name="start_time_title">Begin</string>
   <string name="end_time_title">Einde</string>
-  <string name="mod_version">CyanogenMod-versie</string>
+  <string name="mod_version">KylinMod-versie</string>
   <string name="mod_version_default">Onbekend</string>
   <string name="build_date">Build-datum</string>
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Geheugen</string>
   <string name="phone_service_state">Spraak: <xliff:g id="voice_state">%1$s</xliff:g>, gegevens: <xliff:g id="data_state">%2$s</xliff:g></string>
-  <string name="anonymous_statistics_title">CyanogenMod-statistieken</string>
-  <string name="anonymous_statistics_summary">Help CyanogenMod te verbeteren door anonieme statistieken te verzenden</string>
+  <string name="anonymous_statistics_title">KylinMod-statistieken</string>
+  <string name="anonymous_statistics_summary">Help KylinMod te verbeteren door anonieme statistieken te verzenden</string>
   <string name="anonymous_statistics_warning_title">Over</string>
-  <string name="anonymous_statistics_warning">Door statistieken verzenden toe te staan worden tijdens het opstarten anonieme gegevens naar de ontwikkelaars van CyanogenMod verzonden om unieke installaties te kunnen volgen. In de gegevens zit een uniek id-nummer verwerkt, dat uw privacy niet schendt.\n\nOm een voorbeeld te zien, tikt u op \'Voorbeeld van gegevens\'.</string>
+  <string name="anonymous_statistics_warning">Door statistieken verzenden toe te staan worden tijdens het opstarten anonieme gegevens naar de ontwikkelaars van KylinMod verzonden om unieke installaties te kunnen volgen. In de gegevens zit een uniek id-nummer verwerkt, dat uw privacy niet schendt.\n\nOm een voorbeeld te zien, tikt u op \'Voorbeeld van gegevens\'.</string>
   <string name="enable_reporting_title">Statistieken verzenden</string>
   <string name="preview_data_title">Voorbeeld van gegevens</string>
   <string name="view_stats_title">Statistieken tonen</string>
@@ -689,7 +689,7 @@ Extra opties zijn beschikbaar door een regel lang aan te raken. Door \'Aanpassen
   <string name="logger_title">Anonieme logboekregistratie</string>
   <string name="logger_summary">Logboekinstellingen voor crashes beheren</string>
   <string name="custom_runtime_warning_title">Let op</string>
-  <string name="custom_runtime_warning_message">ART wordt niet officieel ondersteund door CyanogenMod. Deze instelling is opgenomen voor testdoeleinden en kan leiden tot instabiliteit, crashes, gegevensverlies en/of opstartproblemen. Ga naar &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introductie van ART (Engels)&lt;/a&gt; voor meer informatie.&lt;br/&gt;&lt;br/&gt;Wij verzoeken u geen foutrapporten in te sturen wanneer ART is ingeschakeld.&lt;br/&gt;&lt;br/&gt;Weet u zeker dat u wilt herstarten om apps niet meer te laten draaien op <xliff:g id="old" example="libdvm.so">%1$s</xliff:g>, maar op <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
+  <string name="custom_runtime_warning_message">ART wordt niet officieel ondersteund door KylinMod. Deze instelling is opgenomen voor testdoeleinden en kan leiden tot instabiliteit, crashes, gegevensverlies en/of opstartproblemen. Ga naar &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introductie van ART (Engels)&lt;/a&gt; voor meer informatie.&lt;br/&gt;&lt;br/&gt;Wij verzoeken u geen foutrapporten in te sturen wanneer ART is ingeschakeld.&lt;br/&gt;&lt;br/&gt;Weet u zeker dat u wilt herstarten om apps niet meer te laten draaien op <xliff:g id="old" example="libdvm.so">%1$s</xliff:g>, maar op <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
   <string name="gps_download_data_wifi_only">GPS-ondersteunende gegevens alleen downloaden via wifi</string>
   <string name="battery_info_status_charging_dock_ac">(dock-AC)</string>
   <string name="battery_info_status_charging_dock_usb">(dock-USB)</string>

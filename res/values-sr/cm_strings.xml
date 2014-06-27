@@ -207,7 +207,7 @@
   <string name="lockscreen_enable_camera_title">Виџет камере</string>
   <string name="safe_headset_volume_title">Сигурна јачина тона на слушалицама</string>
   <string name="cyanogenmod_waiver_title">Одрицање</string>
-  <string name="cyanogenmod_waiver_body">Промена овог подешавања може бити против твоје државе или владиних закона.\n\nIn  Бирањем \"ОК\" испод, потврђујеш ово упозорење и одричеш, обештећујеш и ослобађаш CyanogenMod и његове сараднике из свих законских обавеза.</string>
+  <string name="cyanogenmod_waiver_body">Промена овог подешавања може бити против твоје државе или владиних закона.\n\nIn  Бирањем \"ОК\" испод, потврђујеш ово упозорење и одричеш, обештећујеш и ослобађаш KylinMod и његове сараднике из свих законских обавеза.</string>
   <string name="quick_settings_panel_title">Панел за Брза подешавања</string>
   <string name="title_static_tiles">Статичне плочице</string>
   <string name="tile_picker_title">Плочице и распоред</string>
@@ -363,23 +363,23 @@
   <string name="quiet_hours_ringer_mute_all">Искључи звоно за све позиве</string>
   <string name="start_time_title">Почетак</string>
   <string name="end_time_title">Крај</string>
-  <string name="mod_version">CyanogenMod верзија</string>
+  <string name="mod_version">KylinMod верзија</string>
   <string name="mod_version_default">Непознато</string>
   <string name="build_date">Датум израде</string>
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Меморија</string>
   <string name="phone_service_state">Глас: <xliff:g id="voice_state">%1$s</xliff:g>, податак: <xliff:g id="data_state">%2$s</xliff:g></string>
-  <string name="anonymous_statistics_title">CyanogenMod статистика</string>
-  <string name="anonymous_statistics_summary">Помози да CyanogenMod буде бољи слањем анонимних статистика</string>
+  <string name="anonymous_statistics_title">KylinMod статистика</string>
+  <string name="anonymous_statistics_summary">Помози да KylinMod буде бољи слањем анонимних статистика</string>
   <string name="anonymous_statistics_warning_title">О програму</string>
-  <string name="anonymous_statistics_warning">Опредељење за CyanogenMod статистику ће омогућити не-личне податке који се достављају 
-програмерима CyanogenMod-а за праћење јединствене инсталације преко уређаја.Подаци  садрже јединствени идентификатор, 
+  <string name="anonymous_statistics_warning">Опредељење за KylinMod статистику ће омогућити не-личне податке који се достављају 
+програмерима KylinMod-а за праћење јединствене инсталације преко уређаја.Подаци  садрже јединствени идентификатор, 
 који не угрожава твоју приватност или личне податке.Подаци се подносе приликом сваког покретања.\n\nЗа пример података који се достављају, иди на Преглед података.</string>
   <string name="enable_reporting_title">Омогући извештавање</string>
   <string name="preview_data_title">Преглед података</string>
   <string name="view_stats_title">Погледај статистике</string>
   <string name="anonymous_learn_more">Сазнај више</string>
-  <string name="anonymous_notification_desc">Омогући или онемогући CyanogenMod статистику</string>
+  <string name="anonymous_notification_desc">Омогући или онемогући KylinMod статистику</string>
   <string name="preview_id_title">Јединствен ID</string>
   <string name="preview_device_title">Уређај</string>
   <string name="preview_version_title">Верзија</string>
@@ -701,7 +701,7 @@
   <string name="logger_title">Анонимно евидентирање \'рушења\'</string>
   <string name="logger_summary">Управљај подешавањима евиденције \'рушења\'</string>
   <string name="custom_runtime_warning_title">Упозорење</string>
-  <string name="custom_runtime_warning_message">ART није званично подржан од стране CyanogenMod-а, јер је високо експерименталан и има потенцијал да изазове нестабилност, падове, и губитак података и превенцију за неприкладно покретање твог уређаја. Посети &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; за више информација .&lt;br/&gt;&lt;br/&gt;Захтевамо да не подносиш извештаје о грешкама ако омогућиш ART.&lt;br/&gt;&lt;br/&gt;Да ли си сигуран да желиш да рестартујеш уређај да би променио од <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> на <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
+  <string name="custom_runtime_warning_message">ART није званично подржан од стране KylinMod-а, јер је високо експерименталан и има потенцијал да изазове нестабилност, падове, и губитак података и превенцију за неприкладно покретање твог уређаја. Посети &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; за више информација .&lt;br/&gt;&lt;br/&gt;Захтевамо да не подносиш извештаје о грешкама ако омогућиш ART.&lt;br/&gt;&lt;br/&gt;Да ли си сигуран да желиш да рестартујеш уређај да би променио од <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> на <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
   <string name="gps_download_data_wifi_only">Преузимај GPS податке само преко Wi-Fi мреже</string>
   <string name="battery_info_status_charging_dock_ac">(ДokAC)</string>
   <string name="battery_info_status_charging_dock_usb">(ДokUSB)</string>

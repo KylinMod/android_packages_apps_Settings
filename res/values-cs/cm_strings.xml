@@ -360,21 +360,21 @@ jednotlivě měnit a tím zvětšit počet řídících bodů. „Odstranit“ s
   <string name="quiet_hours_ringer_mute_all">Nevyzvánět</string>
   <string name="start_time_title">Začátek</string>
   <string name="end_time_title">Konec</string>
-  <string name="mod_version">CyanogenMod verze</string>
+  <string name="mod_version">KylinMod verze</string>
   <string name="mod_version_default">Neznámá</string>
   <string name="build_date">Datum sestavení</string>
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Paměť</string>
   <string name="phone_service_state">Hlas: <xliff:g id="voice_state">%1$s</xliff:g>, data: <xliff:g id="data_state">%2$s</xliff:g></string>
-  <string name="anonymous_statistics_title">CyanogenMod statistiky</string>
-  <string name="anonymous_statistics_summary">Pomozte ke zlepšení CyanogenModu pomocí posíláním anonymních statistik</string>
+  <string name="anonymous_statistics_title">KylinMod statistiky</string>
+  <string name="anonymous_statistics_summary">Pomozte ke zlepšení KylinMod pomocí posíláním anonymních statistik</string>
   <string name="anonymous_statistics_warning_title">Info</string>
   <string name="anonymous_statistics_warning">Pokud povolíte zasílání anonymních statistik z vašeho zařízení, budou se odesílat data bez vašich osobních údajů k vývojářům pro zjištění statistiky počtu instalovaných zařízení a verzí. Data obsahují unikátní identifikátor zařízení, který ale žádným způsobem nekompromituje soukromá data na zařízení. Tyto data jsou odesílána během každého startu zařízení.\n\nMůžete se také podívat do náhledu odesílaných dat.</string>
   <string name="enable_reporting_title">Povolit odesílání</string>
   <string name="preview_data_title">Prohlédnout data</string>
   <string name="view_stats_title">Zobrazit statistiky</string>
   <string name="anonymous_learn_more">Zjistit více</string>
-  <string name="anonymous_notification_desc">Povolit nebo zakázat CyanogenMod statistiky</string>
+  <string name="anonymous_notification_desc">Povolit nebo zakázat KylinMod statistiky</string>
   <string name="preview_id_title">Unikátní ID</string>
   <string name="preview_device_title">Zařízení</string>
   <string name="preview_version_title">Verze</string>
@@ -695,7 +695,7 @@ jednotlivě měnit a tím zvětšit počet řídících bodů. „Odstranit“ s
   <string name="logger_title">Anonymní protokolování pádů aplikací</string>
   <string name="logger_summary">Spravovat nastavení protokolování pádů aplikací</string>
   <string name="custom_runtime_warning_title">Upozornění</string>
-  <string name="custom_runtime_warning_message">ART není oficiálně podporován CyanogenMod. Toto nastavení je experimentální a může potencionálně způsobit
+  <string name="custom_runtime_warning_message">ART není oficiálně podporován KylinMod. Toto nastavení je experimentální a může potencionálně způsobit
 nestabilitu systému, pády aplikací, ztrátu dat či nemožnost správného nastartování systému. Navštivte
 &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Představení ART&lt;/a&gt;
 pro více informací.&lt;br/&gt;&lt;br/&gt;Pokud nastavíte ART jako výchozí běhové prostředí, nezadávejte žádné

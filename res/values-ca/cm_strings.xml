@@ -207,7 +207,7 @@
   <string name="lockscreen_enable_camera_title">Widget Càmera</string>
   <string name="safe_headset_volume_title">Volum dels auriculars segur</string>
   <string name="cyanogenmod_waiver_title">Renúncia</string>
-  <string name="cyanogenmod_waiver_body">Canviar aquest ajust podria anar en contra del teu país o les lleis nacionals.\n\nSeleccionant \'OK\', declares conèixer aquesta alerta i renuncies, i alliberes a CyanogenMod i els seus contribuïdors de totes les responsabilitat legals.</string>
+  <string name="cyanogenmod_waiver_body">Canviar aquest ajust podria anar en contra del teu país o les lleis nacionals.\n\nSeleccionant \'OK\', declares conèixer aquesta alerta i renuncies, i alliberes a KylinMod i els seus contribuïdors de totes les responsabilitat legals.</string>
   <string name="quick_settings_panel_title">Panell d\'ajustos ràpids</string>
   <string name="title_static_tiles">Cel·les estàtiques</string>
   <string name="tile_picker_title">Cel·les i disposició</string>
@@ -356,21 +356,21 @@ Hi ha disponibles opcions addicionals apretant llargament sobre la línia. Selec
   <string name="quiet_hours_ringer_mute_all">Silenci per totes les trucades</string>
   <string name="start_time_title">Inici</string>
   <string name="end_time_title">Fi</string>
-  <string name="mod_version">CyanogenMod versió</string>
+  <string name="mod_version">KylinMod versió</string>
   <string name="mod_version_default">Desconegut</string>
   <string name="build_date">Data d\'elaboració</string>
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Memòria</string>
   <string name="phone_service_state">Veu: <xliff:g id="voice_state">%1$s</xliff:g>, dades: <xliff:g id="data_state">%2$s</xliff:g></string>
-  <string name="anonymous_statistics_title">Estadístiques CyanogenMod</string>
-  <string name="anonymous_statistics_summary">Ajuda a fer millor CyanogenMod optant a transmetre estadístiques anònimes</string>
+  <string name="anonymous_statistics_title">Estadístiques KylinMod</string>
+  <string name="anonymous_statistics_summary">Ajuda a fer millor KylinMod optant a transmetre estadístiques anònimes</string>
   <string name="anonymous_statistics_warning_title">Quant a</string>
-  <string name="anonymous_statistics_warning">Optant a les estadístiques de CyanogenMod permetrà que dades no-personals siguin transmeses als desenvolupadors de CyanogenMod per rastrejar les intal·lacions individuals a través dels dispositius. La informació transmesa inclou un identificador únic, que no compromet la privacitat o dades personals. Les dades son transmeses durant cada arrancada.\n\nPer un exemple de les dades transmeses, pica a vista prèvia de Dades.</string>
+  <string name="anonymous_statistics_warning">Optant a les estadístiques de KylinMod permetrà que dades no-personals siguin transmeses als desenvolupadors de KylinMod per rastrejar les intal·lacions individuals a través dels dispositius. La informació transmesa inclou un identificador únic, que no compromet la privacitat o dades personals. Les dades son transmeses durant cada arrancada.\n\nPer un exemple de les dades transmeses, pica a vista prèvia de Dades.</string>
   <string name="enable_reporting_title">Activa informes</string>
   <string name="preview_data_title">Vista prèvia de Dades</string>
   <string name="view_stats_title">Mostra estadístiques</string>
   <string name="anonymous_learn_more">Aprèn més</string>
-  <string name="anonymous_notification_desc">Activa o desactiva les estadístiques de CyanogenMod</string>
+  <string name="anonymous_notification_desc">Activa o desactiva les estadístiques de KylinMod</string>
   <string name="preview_id_title">ID únic</string>
   <string name="preview_device_title">Dispositiu</string>
   <string name="preview_version_title">Versió</string>
@@ -691,7 +691,7 @@ Hi ha disponibles opcions addicionals apretant llargament sobre la línia. Selec
   <string name="logger_title">Registre d\'errors anònim</string>
   <string name="logger_summary">Gestiona la configuració del registre d\'errors</string>
   <string name="custom_runtime_warning_title">Alerta</string>
-  <string name="custom_runtime_warning_message">Cyanogenmod no dóna oficialment suport a ART ja que aquest ajustament és altament experimental i té el potencial de causar inestabilitats, fallades, pèrdua de dades o pot impedir l\'arrancada correcta del teu dispositiu. Visita &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; per a més informació.&lt;br/&gt;&lt;br/&gt;Et demanem que no envïis informes d\'error si tens activada ART com la teva runtime.&lt;br/&gt;&lt;br/&gt;Estàs segur que vols reiniciar per canviar la runtime de <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> a <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
+  <string name="custom_runtime_warning_message">KylinMod no dóna oficialment suport a ART ja que aquest ajustament és altament experimental i té el potencial de causar inestabilitats, fallades, pèrdua de dades o pot impedir l\'arrancada correcta del teu dispositiu. Visita &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; per a més informació.&lt;br/&gt;&lt;br/&gt;Et demanem que no envïis informes d\'error si tens activada ART com la teva runtime.&lt;br/&gt;&lt;br/&gt;Estàs segur que vols reiniciar per canviar la runtime de <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> a <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
   <string name="gps_download_data_wifi_only">Descarrega dades de GPS assistides només sobre xarxes Wi-Fi</string>
   <string name="battery_info_status_charging_dock_ac">(AcoblamentAC)</string>
   <string name="battery_info_status_charging_dock_usb">(AcoblamentUSB)</string>

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 The CyanogenMod Project
+ * Copyright (C) 2014 The KylinMod OpenSource Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.cmstats;
+package com.android.settings.kmstats;
 
 import android.content.Context;
 import android.os.SystemProperties;
@@ -60,13 +60,20 @@ public class Utilities {
     }
 
     public static String getDevice() {
-        return SystemProperties.get("ro.cm.device");
+        return SystemProperties.get("ro.km.device");
     }
 
     public static String getModVersion() {
-        return SystemProperties.get("ro.cm.version");
+        return SystemProperties.get("ro.km.version");
+    }
+    
+    public static String getRomName() {
+        return SystemProperties.get("ro.km.ui.name");
     }
 
+    public static String getRomVersion(){
+        return SystemProperties.get("ro.km.ui.version");
+    }
     public static String digest(String input) {
         try {
             MessageDigest md = MessageDigest.getInstance("MD5");

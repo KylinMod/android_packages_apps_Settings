@@ -1887,7 +1887,7 @@
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:clearTaskOnLaunch="true">
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.cmstats.AnonymousStats" />
+                android:value="com.android.settings.kmstats.AnonymousStats" />
         </activity>
 
         <activity android:name=".cyanogenmod.ChangeLog" />
@@ -1899,10 +1899,6 @@
         <activity android:name=".notificationlight.NotificationLightSettings" />
 
         <activity android:name=".notificationlight.BatteryLightSettings" />
-
-        <activity android:name=".cyanogenmod.StatusBar" />
-
-        <activity android:name=".cyanogenmod.NotificationDrawer" />
 
          <!-- "Blacklist settings" UI, used only on voice-capable phone devices. -->
         <activity android:name="Settings$BlacklistSettingsActivity"
@@ -2138,7 +2134,7 @@
         </receiver>
 
         <!-- Anonymous Statistics -->
-        <receiver android:name=".cmstats.ReportingServiceManager"
+        <receiver android:name=".kmstats.ReportingServiceManager"
             android:enabled="true"
             android:exported="false"
             android:label="ReportingServiceManager">
@@ -2151,7 +2147,7 @@
         <service android:label="ReportingService"
             android:enabled="true"
             android:exported="false"
-            android:name=".cmstats.ReportingService">
+            android:name=".kmstats.ReportingService">
         </service>
 
 

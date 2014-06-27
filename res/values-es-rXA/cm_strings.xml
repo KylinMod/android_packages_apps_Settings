@@ -205,7 +205,7 @@
   <string name="lockscreen_enable_camera_title">Widget de cámara</string>
   <string name="safe_headset_volume_title">Volume seguru</string>
   <string name="cyanogenmod_waiver_title">Renuncia</string>
-  <string name="cyanogenmod_waiver_body">Camudar esti axuste pue dir escontra les lleis del to estáu o país.\n\nCalcando \u00ABAceutar\u00BB, reconoces esti avisu y eximes de cualquier responsabilidá llegal a CyanogenMod y los sos collaboradores, arrenunciando d\'esti mou a cualquier reclamación por daños y perxuicios.</string>
+  <string name="cyanogenmod_waiver_body">Camudar esti axuste pue dir escontra les lleis del to estáu o país.\n\nCalcando \u00ABAceutar\u00BB, reconoces esti avisu y eximes de cualquier responsabilidá llegal a KylinMod y los sos collaboradores, arrenunciando d\'esti mou a cualquier reclamación por daños y perxuicios.</string>
   <string name="quick_settings_panel_title">Panel d\'axustes rápidos</string>
   <string name="title_static_tiles">Controles estáticos</string>
   <string name="tile_picker_title">Controles y disposición</string>
@@ -352,21 +352,21 @@ Tocando de mou prollongáu cada llinia, van amosase opciones adicionales. Seleic
   <string name="quiet_hours_ringer_mute_all">Silenciar toles llamaes</string>
   <string name="start_time_title">Aniciu</string>
   <string name="end_time_title">Fin</string>
-  <string name="mod_version">Versión CyanogenMod</string>
+  <string name="mod_version">Versión KylinMod</string>
   <string name="mod_version_default">Desconocida</string>
   <string name="build_date">Data de compilación</string>
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Memoria</string>
   <string name="phone_service_state">Voz: <xliff:g id="voice_state">%1$s</xliff:g>, datos: <xliff:g id="data_state">%2$s</xliff:g></string>
-  <string name="anonymous_statistics_title">Estadístiques CyanogenMod</string>
-  <string name="anonymous_statistics_summary">Ayuda a ameyorar CyanogenMod per aciu del unviu anónimu d\'estadístiques</string>
+  <string name="anonymous_statistics_title">Estadístiques KylinMod</string>
+  <string name="anonymous_statistics_summary">Ayuda a ameyorar KylinMod per aciu del unviu anónimu d\'estadístiques</string>
   <string name="anonymous_statistics_warning_title">Avisu</string>
-  <string name="anonymous_statistics_warning">Permitiendo la recopilación y unviu d\'estadístiques de CyanogenMod, autorices l\'unviu d\'información de calter non personal a los desendolcadores de CyanogenMod pa facer un siguimientu de les instalaciones que faes nos preseos. La información unviada inclúi un identificador únicu que nun compromete la to privacidá nin la to información personal. Esta información únviase mientres l\'arranque.\n\nPa ver un exemplu de la información unviada, primi en \u00ABPrevisualizar datos\u00BB</string>
+  <string name="anonymous_statistics_warning">Permitiendo la recopilación y unviu d\'estadístiques de KylinMod, autorices l\'unviu d\'información de calter non personal a los desendolcadores de KylinMod pa facer un siguimientu de les instalaciones que faes nos preseos. La información unviada inclúi un identificador únicu que nun compromete la to privacidá nin la to información personal. Esta información únviase mientres l\'arranque.\n\nPa ver un exemplu de la información unviada, primi en \u00ABPrevisualizar datos\u00BB</string>
   <string name="enable_reporting_title">Activar unviu d\'estadístiques</string>
   <string name="preview_data_title">Previsualizar datos</string>
   <string name="view_stats_title">Ver estadístiques</string>
   <string name="anonymous_learn_more">Deprendi más</string>
-  <string name="anonymous_notification_desc">Activar o desactivar estadístiques de CyanogenMod</string>
+  <string name="anonymous_notification_desc">Activar o desactivar estadístiques de KylinMod</string>
   <string name="preview_id_title">Identificador únicu</string>
   <string name="preview_device_title">Preséu</string>
   <string name="preview_version_title">Versión</string>
@@ -687,7 +687,7 @@ Tocando de mou prollongáu cada llinia, van amosase opciones adicionales. Seleic
   <string name="logger_title">Rexistru de fallos anónimu</string>
   <string name="logger_summary">Xestionar los axustes del rexistru de fallos</string>
   <string name="custom_runtime_warning_title">Avisu</string>
-  <string name="custom_runtime_warning_message">ART nun ta sofitáu oficialmente por CyanogenMod. Esti axuste incluyóse namái pa fines d\'esperimentación y pue causar inestabilidá, bloqueos, perda de datos ya inclusu torgar el correutu aniciu del preséu. Pa más información visita &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;Nun unvies ficheros d\'informes de fallos si habilitesti ART.&lt;br/&gt;&lt;br/&gt;¿De xuru que quies reaniciar pa camudar el tiempu d\'execución de <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> a <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
+  <string name="custom_runtime_warning_message">ART nun ta sofitáu oficialmente por KylinMod. Esti axuste incluyóse namái pa fines d\'esperimentación y pue causar inestabilidá, bloqueos, perda de datos ya inclusu torgar el correutu aniciu del preséu. Pa más información visita &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;Nun unvies ficheros d\'informes de fallos si habilitesti ART.&lt;br/&gt;&lt;br/&gt;¿De xuru que quies reaniciar pa camudar el tiempu d\'execución de <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> a <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
   <string name="gps_download_data_wifi_only">Descargar datos del GPS asistíu namái en redes Wi-Fi</string>
   <string name="battery_info_status_charging_dock_ac">(BaseAC)</string>
   <string name="battery_info_status_charging_dock_usb">(BaseUSB)</string>

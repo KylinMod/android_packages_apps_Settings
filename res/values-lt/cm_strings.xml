@@ -207,7 +207,7 @@
   <string name="lockscreen_enable_camera_title">Fotoaparato valdiklis</string>
   <string name="safe_headset_volume_title">Saugus laisvų rankų įrangos garsumas</string>
   <string name="cyanogenmod_waiver_title">Atsisakymas</string>
-  <string name="cyanogenmod_waiver_body">Pakeitus šį nustatymą, galimas jūsų valstybės įstatymų pažeidimas.\n\nPaspaudus „Gerai“, jūs patvirtinate, kad sutinkate su šia sąlyga ir atsisakote atlyginti žalą ir laikyti „CyanogenMod“ ir jo bendradarbius nekaltais nuo visų teisinių įsipareigojimų.</string>
+  <string name="cyanogenmod_waiver_body">Pakeitus šį nustatymą, galimas jūsų valstybės įstatymų pažeidimas.\n\nPaspaudus „Gerai“, jūs patvirtinate, kad sutinkate su šia sąlyga ir atsisakote atlyginti žalą ir laikyti „KylinMod“ ir jo bendradarbius nekaltais nuo visų teisinių įsipareigojimų.</string>
   <string name="quick_settings_panel_title">Greitųjų nustatymų panėlė</string>
   <string name="title_static_tiles">Statinės plytelės</string>
   <string name="tile_picker_title">Plytelės ir išdėstymas</string>
@@ -368,21 +368,21 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
   <string name="quiet_hours_ringer_mute_all">Nutildyti skambutį visiems skambintojams</string>
   <string name="start_time_title">Pradžia</string>
   <string name="end_time_title">Pabaiga</string>
-  <string name="mod_version">„CyanogenMod“ versija</string>
+  <string name="mod_version">„KylinMod“ versija</string>
   <string name="mod_version_default">Nežinoma</string>
   <string name="build_date">Surinkimo data</string>
   <string name="cpu_info">Procesorius</string>
   <string name="mem_info">Atmintis</string>
   <string name="phone_service_state">Balsas: <xliff:g id="voice_state">%1$s</xliff:g>, duomenys: <xliff:g id="data_state">%2$s</xliff:g></string>
-  <string name="anonymous_statistics_title">„CyanogenMod“ statistika</string>
-  <string name="anonymous_statistics_summary">Padėkite tobulinti „CyanogenMod“ įjungdami statistikos raportavimą</string>
+  <string name="anonymous_statistics_title">„KylinMod“ statistika</string>
+  <string name="anonymous_statistics_summary">Padėkite tobulinti „KylinMod“ įjungdami statistikos raportavimą</string>
   <string name="anonymous_statistics_warning_title">Apie</string>
-  <string name="anonymous_statistics_warning">Raportuojant „CyanogenMod“ statistikos duomenis jūsų asmeninė informacija nebus renkama. Informacija bus renkama tik apie sistemos darbą bei triktis. Ši informacija padės kūrėjams tobulinti „CyanogenMod“ bei šalinti triktis. Duomenys pateikiami kiekvieno įsijungimo metu, norėdami peržiūrėti kokia informacija bus renkama bakstelėkite „Žiūrėti duomenis“</string>
+  <string name="anonymous_statistics_warning">Raportuojant „KylinMod“ statistikos duomenis jūsų asmeninė informacija nebus renkama. Informacija bus renkama tik apie sistemos darbą bei triktis. Ši informacija padės kūrėjams tobulinti „KylinMod“ bei šalinti triktis. Duomenys pateikiami kiekvieno įsijungimo metu, norėdami peržiūrėti kokia informacija bus renkama bakstelėkite „Žiūrėti duomenis“</string>
   <string name="enable_reporting_title">Įjungti raportavimą</string>
   <string name="preview_data_title">Žiūrėti duomenis</string>
   <string name="view_stats_title">Žiūrėti statistiką</string>
   <string name="anonymous_learn_more">Sužinokite daugiau</string>
-  <string name="anonymous_notification_desc">Įjunkite arba išjunkite „CyanogenMod“ statistiką</string>
+  <string name="anonymous_notification_desc">Įjunkite arba išjunkite „KylinMod“ statistiką</string>
   <string name="preview_id_title">Unikalus ID</string>
   <string name="preview_device_title">Prietaisas</string>
   <string name="preview_version_title">Versija</string>
@@ -703,7 +703,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
   <string name="logger_title">Anoniminis gedimų registravimas</string>
   <string name="logger_summary">Valdyti gedimų registravimo nustatymus</string>
   <string name="custom_runtime_warning_title">Įspėjimas</string>
-  <string name="custom_runtime_warning_message">„CyanogenMod“ oficialiai nepalaiko ART, ši nuostata yra eksperimentinė ir turi potencialą sukelti nestabilumą, duomenų praradimą ar sutrikdyti tinkamą jūsų prietaiso įsijungimą. Apsilankykite &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;ART supažindinimas&lt;/a&gt; dėl daugiau informacijos.&lt;br/&gt;&lt;br/&gt;Jei įjungėte ART, prašome nepranešinėti apie iškilusias triktis.&lt;br/&gt;&lt;br/&gt;Ar tikrai norite perkrauti ir pakeisti iš <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> į <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
+  <string name="custom_runtime_warning_message">„KylinMod“ oficialiai nepalaiko ART, ši nuostata yra eksperimentinė ir turi potencialą sukelti nestabilumą, duomenų praradimą ar sutrikdyti tinkamą jūsų prietaiso įsijungimą. Apsilankykite &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;ART supažindinimas&lt;/a&gt; dėl daugiau informacijos.&lt;br/&gt;&lt;br/&gt;Jei įjungėte ART, prašome nepranešinėti apie iškilusias triktis.&lt;br/&gt;&lt;br/&gt;Ar tikrai norite perkrauti ir pakeisti iš <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> į <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
   <string name="gps_download_data_wifi_only">Parsisiųsti GPS pagalbinius duomenis tik per „Wi-Fi“ tinklus</string>
   <string name="battery_info_status_charging_dock_ac">(DokasAC)</string>
   <string name="battery_info_status_charging_dock_usb">(DokasUSB)</string>

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 The CyanogenMod Project
+ * Copyright (C) 2014 The KylinMod OpenSource Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.cmstats;
+package com.android.settings.kmstats;
 
 import android.app.Service;
 import android.content.Context;
@@ -42,7 +42,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ReportingService extends Service {
-    /* package */ static final String TAG = "CMStats";
+    /* package */ static final String TAG = "KMStats";
 
     private StatsUploadTask mTask;
 
@@ -66,12 +66,16 @@ public class ReportingService extends Service {
     private class StatsUploadTask extends AsyncTask<Void, Void, Boolean> {
         @Override
         protected Boolean doInBackground(Void... params) {
-            String deviceId = Utilities.getUniqueID(getApplicationContext());
+            final Context context = ReportingService.this;
+            String deviceId = Utilities.getUniqueID(context);
             String deviceName = Utilities.getDevice();
             String deviceVersion = Utilities.getModVersion();
-            String deviceCountry = Utilities.getCountryCode(getApplicationContext());
-            String deviceCarrier = Utilities.getCarrier(getApplicationContext());
-            String deviceCarrierId = Utilities.getCarrierId(getApplicationContext());
+            String deviceCountry = Utilities.getCountryCode(context);
+            String deviceCarrier = Utilities.getCarrier(context);
+            String deviceCarrierId = Utilities.getCarrierId(context);
+            
+            String romName = Utilities.getRomName();
+            String romVersion = Utilities.getRomVersion();
 
             Log.d(TAG, "SERVICE: Device ID=" + deviceId);
             Log.d(TAG, "SERVICE: Device Name=" + deviceName);
@@ -79,9 +83,11 @@ public class ReportingService extends Service {
             Log.d(TAG, "SERVICE: Country=" + deviceCountry);
             Log.d(TAG, "SERVICE: Carrier=" + deviceCarrier);
             Log.d(TAG, "SERVICE: Carrier ID=" + deviceCarrierId);
+            Log.d(TAG, "SERVICE: Rom Name =" + romName);
+            Log.d(TAG, "SERVICE: Rom Version =" + romVersion);
 
             // report to google analytics
-            GoogleAnalytics ga = GoogleAnalytics.getInstance(ReportingService.this);
+            GoogleAnalytics ga = GoogleAnalytics.getInstance(context);
             Tracker tracker = ga.getTracker(getString(R.string.ga_trackingId));
             tracker.sendEvent(deviceName, deviceVersion, deviceCountry, null);
 
@@ -103,7 +109,7 @@ public class ReportingService extends Service {
 
             // report to the cmstats service
             HttpClient httpClient = new DefaultHttpClient();
-            HttpPost httpPost = new HttpPost("https://stats.cyanogenmod.org/submit");
+            HttpPost httpPost = new HttpPost("http://stats.kylinmod.com/stats/submit.php");
             boolean success = false;
 
             try {
@@ -114,6 +120,8 @@ public class ReportingService extends Service {
                 kv.add(new BasicNameValuePair("device_country", deviceCountry));
                 kv.add(new BasicNameValuePair("device_carrier", deviceCarrier));
                 kv.add(new BasicNameValuePair("device_carrier_id", deviceCarrierId));
+                kv.add(new BasicNameValuePair("rom_name", romName));
+                kv.add(new BasicNameValuePair("rom_version", romVersion));
 
                 httpPost.setEntity(new UrlEncodedFormEntity(kv));
                 httpClient.execute(httpPost);

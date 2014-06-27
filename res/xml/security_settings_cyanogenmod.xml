@@ -18,12 +18,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <PreferenceCategory android:key="cmprivacy" android:title="@string/privacy_settings_cyanogenmod_category">
-        <!-- Anonymous statistics - (CMStats) -->
+        <!-- Anonymous statistics - (KMStats) -->
         <PreferenceScreen
-                android:key="cmstats"
+                android:key="kmstats"
                 android:title="@string/anonymous_statistics_title"
                 android:summary="@string/anonymous_statistics_summary"
-                android:fragment="com.android.settings.cmstats.AnonymousStats" >
+                android:fragment="com.android.settings.kmstats.AnonymousStats" >
         </PreferenceScreen>
     </PreferenceCategory>
 
