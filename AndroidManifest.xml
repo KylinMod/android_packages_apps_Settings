@@ -1767,6 +1767,8 @@
 
         <activity android:name=".kylinmod.StatusBarClockStyle" />
 
+        <activity android:name=".kylinmod.AnimationOptions" />
+
         <activity android:name="Settings$KylinSettingsActivity"
                 android:label="@string/kylin_settings_title"
                 android:taskAffinity=""
