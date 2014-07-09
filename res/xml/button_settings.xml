@@ -56,8 +56,6 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-<<<<<<< HEAD
-=======
             android:key="navigation_bar"
             android:title="@string/navigation_bar_category" >
 
@@ -85,7 +83,6 @@
     </PreferenceCategory>
 
     <PreferenceCategory
->>>>>>> cfce1a192b1ad59c607284fc537f1664f257f682
         android:key="home_key"
         android:title="@string/hardware_keys_home_key_title" >
 
