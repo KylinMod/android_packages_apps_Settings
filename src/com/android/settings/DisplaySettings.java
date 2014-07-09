@@ -133,6 +133,42 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.display_settings);
 
         PreferenceCategory displayPrefs = (PreferenceCategory) findPreference(CATEGORY_DISPLAY);
+<<<<<<< HEAD
+=======
+        PreferenceCategory expandedCategory =
+                (PreferenceCategory) findPreference(CATEGORY_EXPANDED_DESKTOP);
+
+        // Expanded desktop
+        mExpandedDesktopPref = (ListPreference) findPreference(KEY_EXPANDED_DESKTOP);
+        mExpandedDesktopNoNavbarPref =
+                (CheckBoxPreference) findPreference(KEY_EXPANDED_DESKTOP_NO_NAVBAR);
+
+        int expandedDesktopValue = Settings.System.getInt(getContentResolver(),
+                Settings.System.EXPANDED_DESKTOP_STYLE, 2);
+
+        try {
+            // Only show the navigation bar category on devices that has a navigation bar
+            // unless we are forcing it via development settings
+            boolean forceNavbar = android.provider.Settings.System.getInt(getContentResolver(),
+                    android.provider.Settings.System.DEV_FORCE_SHOW_NAVBAR, 0) == 1;
+            boolean hasNavBar = WindowManagerGlobal.getWindowManagerService().hasNavigationBar()
+                    || forceNavbar;
+
+            if (hasNavBar) {
+                mExpandedDesktopPref.setOnPreferenceChangeListener(this);
+                mExpandedDesktopPref.setValue(String.valueOf(expandedDesktopValue));
+                updateExpandedDesktop(expandedDesktopValue);
+                expandedCategory.removePreference(mExpandedDesktopNoNavbarPref);
+            } else {
+                // Hide no-op "Status bar visible" expanded desktop mode
+                mExpandedDesktopNoNavbarPref.setOnPreferenceChangeListener(this);
+                mExpandedDesktopNoNavbarPref.setChecked(expandedDesktopValue > 0);
+                expandedCategory.removePreference(mExpandedDesktopPref);
+            }
+        } catch (RemoteException e) {
+            Log.e(TAG, "Error getting navigation bar status");
+        }
+>>>>>>> cfce1a192b1ad59c607284fc537f1664f257f682
 
         mDisplayRotationPreference = (PreferenceScreen) findPreference(KEY_DISPLAY_ROTATION);
 

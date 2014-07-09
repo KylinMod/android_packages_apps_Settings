@@ -40,19 +40,15 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.nfc.NfcAdapter;
-import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Handler;
 import android.os.INetworkManagementService;
 import android.os.RemoteException;
-import android.os.ResultReceiver;
 import android.os.ServiceManager;
 import android.os.UserHandle;
 import android.os.UserManager;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceFragment;
-import android.support.v4.view.MenuItemCompat;
 import android.text.TextUtils;
 import android.telephony.MSimTelephonyManager;
 import android.util.Log;
@@ -89,12 +85,19 @@ import com.android.settings.blacklist.BlacklistSettings;
 import com.android.settings.bluetooth.BluetoothEnabler;
 import com.android.settings.bluetooth.BluetoothSettings;
 import com.android.settings.cyanogenmod.ButtonSettings;
+<<<<<<< HEAD
+=======
+import com.android.settings.cyanogenmod.LockscreenInterface;
+import com.android.settings.cyanogenmod.NavBar;
+import com.android.settings.cyanogenmod.NavRing;
+>>>>>>> cfce1a192b1ad59c607284fc537f1664f257f682
 import com.android.settings.cyanogenmod.PerformanceSettings;
 import com.android.settings.kylinmod.KylinSettings;
 import com.android.settings.cyanogenmod.superuser.PolicyNativeFragment;
 import com.android.settings.deviceinfo.Memory;
 import com.android.settings.deviceinfo.UsbSettings;
 import com.android.settings.fuelgauge.PowerUsageSummary;
+import com.android.settings.headsup.HeadsUpSettings;
 import com.android.settings.inputmethod.InputMethodAndLanguageSettings;
 import com.android.settings.inputmethod.KeyboardLayoutPickerFragment;
 import com.android.settings.inputmethod.SpellCheckersSettings;
@@ -111,6 +114,7 @@ import com.android.settings.profiles.AppGroupConfig;
 import com.android.settings.profiles.ProfileConfig;
 import com.android.settings.profiles.ProfileEnabler;
 import com.android.settings.profiles.ProfilesSettings;
+import com.android.settings.quicksettings.QuickSettingsTiles;
 import com.android.settings.search.SettingsAutoCompleteTextView;
 import com.android.settings.search.SearchPopulator;
 import com.android.settings.search.SettingsSearchFilterAdapter;
@@ -152,17 +156,19 @@ public class Settings extends PreferenceActivity
     private static final String KEY_SCREEN_GESTURE_SETTINGS = "touch_screen_gesture_settings";
 
     private static final String EXTRA_UI_OPTIONS = "settings:ui_options";
+    private static final String EXTRA_DISABLE_SEARCH = "settings:disable_search";
 
     private static final String SAVE_KEY_CURRENT_HEADER = "com.android.settings.CURRENT_HEADER";
     private static final String SAVE_KEY_PARENT_HEADER = "com.android.settings.PARENT_HEADER";
 
     private static final String VOICE_WAKEUP_PACKAGE_NAME = "com.cyanogenmod.voicewakeup";
     private static final String GESTURE_SETTINGS_PACKAGE_NAME = "com.cyanogenmod.settings";
-    public static final String NOTIFIER_EXTRA = "notifier";
 
     static final int DIALOG_ONLY_ONE_HOME = 1;
 
     private static boolean sShowNoHomeNotice = false;
+
+    private boolean mDisableSearchIcon = false;
 
     private String mFragmentClass;
     private int mTopLevelHeaderId;
@@ -170,7 +176,6 @@ public class Settings extends PreferenceActivity
     private Header mCurrentHeader;
     private Header mParentHeader;
     private boolean mInLocalHeaderSwitch;
-    private SettingsSearchFilterAdapter mSearchAdapter;
 
     // Show only these settings for restricted users
     private int[] SETTINGS_FOR_RESTRICTED = {
@@ -245,9 +250,8 @@ public class Settings extends PreferenceActivity
         final InputMethodManager imm =
                 (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
 
-        mSearchBar = (SettingsAutoCompleteTextView) MenuItemCompat.getActionView(mSearchItem);
-
-        MenuItemCompat.setOnActionExpandListener(mSearchItem, new MenuItemCompat.OnActionExpandListener() {
+        mSearchBar = (SettingsAutoCompleteTextView) mSearchItem.getActionView();
+        mSearchItem.setOnActionExpandListener(new MenuItem.OnActionExpandListener() {
             @Override
             public boolean onMenuItemActionCollapse(MenuItem item) {
                 mSearchBar.clearFocus();
@@ -265,42 +269,18 @@ public class Settings extends PreferenceActivity
             }
         });
 
-        new PopulateSearchSettingsTask().execute();
+        ActionBar.LayoutParams layoutParams = new ActionBar.LayoutParams(
+                ActionBar.LayoutParams.WRAP_CONTENT, ActionBar.LayoutParams.MATCH_PARENT);
 
-        ActionBar.LayoutParams layout = new ActionBar.LayoutParams(
-                ActionBar.LayoutParams.MATCH_PARENT, ActionBar.LayoutParams.MATCH_PARENT);
-        mSearchBar.setLayoutParams(layout);
+        mSearchBar.setLayoutParams(layoutParams);
         mSearchBar.setHint(R.string.settings_search_autocompleteview_hint);
         mSearchBar.setThreshold(1);
+        mSearchBar.setSingleLine(true);
         mSearchBar.setOnItemClickListener(this);
+        mSearchBar.setAdapter(new SettingsSearchFilterAdapter(this));
+
+        mSearchItem.setVisible(!mDisableSearchIcon);
         return true;
-    }
-
-    private class PopulateSearchSettingsTask extends
-            AsyncTask<Void, Void, ArrayList<SearchInfo>> {
-        @Override
-        protected ArrayList<SearchInfo> doInBackground(Void... param) {
-            final ArrayList<SearchInfo> infos = SearchPopulator.getTitles(Settings.this);
-            return infos;
-        }
-
-        @Override
-        protected void onPostExecute(ArrayList<SearchInfo> infos) {
-            mSearchAdapter = new SettingsSearchFilterAdapter(Settings.this,
-                    R.layout.settings_search_complete_view, infos);
-            mSearchBar.setAdapter(mSearchAdapter);
-        }
-    };
-
-    private class SearchNotifier extends ResultReceiver {
-        public SearchNotifier(Handler handler) {
-            super(handler);
-        }
-
-        @Override
-        protected void onReceiveResult(int resultCode, Bundle resultData) {
-            new PopulateSearchSettingsTask().execute();
-        }
     }
 
     @Override
@@ -309,11 +289,9 @@ public class Settings extends PreferenceActivity
             getWindow().setUiOptions(getIntent().getIntExtra(EXTRA_UI_OPTIONS, 0));
         }
 
-        Intent i = new Intent(this, SearchPopulator.class);
-        i.putExtra(NOTIFIER_EXTRA, new SearchNotifier(new Handler()));
-        startService(i);
-        mActionBar = getActionBar();
-        mActionBar.setDisplayShowCustomEnabled(true);
+        if (getIntent().hasExtra(EXTRA_DISABLE_SEARCH)) {
+            mDisableSearchIcon = getIntent().getBooleanExtra(EXTRA_DISABLE_SEARCH, false);
+        }
 
         mAuthenticatorHelper = new AuthenticatorHelper();
         mAuthenticatorHelper.updateAuthDescriptions(this);
@@ -360,6 +338,9 @@ public class Settings extends PreferenceActivity
             getActionBar().setDisplayHomeAsUpEnabled(false);
             getActionBar().setHomeButtonEnabled(false);
         }
+
+        mActionBar = getActionBar();
+        mActionBar.setDisplayShowCustomEnabled(true);
     }
 
     @Override
@@ -398,11 +379,9 @@ public class Settings extends PreferenceActivity
 
     @Override
     public void onBackPressed() {
-        if (mSearchBar != null) {
-            if (mSearchBar.hasFocus()) {
-                mSearchBar.clearFocus();
-                return;
-            }
+        if (mSearchBar != null && mSearchBar.hasFocus()) {
+            mSearchBar.clearFocus();
+            return;
         }
         super.onBackPressed();
     }
@@ -431,6 +410,7 @@ public class Settings extends PreferenceActivity
         mDevelopmentPreferencesListener = null;
     }
 
+    @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
         mSearchBar.clearFocus();
@@ -681,6 +661,22 @@ public class Settings extends PreferenceActivity
                 PrintSettingsFragment.class.getName().equals(fragmentName) ||
                 PrintServiceSettingsFragment.class.getName().equals(fragmentName)) {
             intent.putExtra(EXTRA_UI_OPTIONS, ActivityInfo.UIOPTION_SPLIT_ACTION_BAR_WHEN_NARROW);
+            // Should also disable the search options here to not confuse
+            // the end user
+            intent.putExtra(EXTRA_DISABLE_SEARCH, true);
+        } else if (ApplicationSettings.class.getName().equals(fragmentName) ||
+                DataUsageSummary.class.getName().equals(fragmentName) ||
+                QuickSettingsTiles.class.getName().equals(fragmentName) ||
+                HeadsUpSettings.class.getName().equals(fragmentName) ||
+                PowerUsageSummary.class.getName().equals(fragmentName) ||
+                ThemeSettings.class.getName().equals(fragmentName) ||
+                ManageApplications.class.getName().equals(fragmentName) ||
+                NavBar.class.getName().equals(fragmentName) ||
+                NavRing.class.getName().equals(fragmentName) ||
+                PaymentSettings.class.getName().equals(fragmentName) ||
+                WifiDisplaySettings.class.getName().equals(fragmentName)) {
+            // Should force disable search options
+            intent.putExtra(EXTRA_DISABLE_SEARCH, true);
         }
         intent.setClass(this, SubSettings.class);
     }
@@ -962,23 +958,26 @@ public class Settings extends PreferenceActivity
     }
 
     @Override
-    public void onItemClick(AdapterView<?> parent,
-                            View view, int position, long l) {
+    public void onItemClick(AdapterView<?> parent, View view, int position, long l) {
         SearchInfo info = (SearchInfo) parent.getItemAtPosition(position);
         mSearchBar.setText("");
         mSearchBar.clearFocus();
         mSearchItem.collapseActionView();;
 
-        final InputMethodManager imm =
-                (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-        imm.hideSoftInputFromWindow(mSearchBar.getWindowToken(), 0);
-
         if (info.level == 0) {
+            Bundle args = info.header.fragmentArguments;
+            if (args == null) {
+                args = info.header.fragmentArguments = new Bundle();
+            }
+            if (info.key != null && !args.containsKey(SearchPopulator.EXTRA_PREF_KEY)) {
+                args.putString(SearchPopulator.EXTRA_PREF_KEY, info.key);
+            }
             onHeaderClick(info.header, 0);
         } else {
             Intent i = new Intent(this, SubSettings.class);
             i.putExtra(EXTRA_SHOW_FRAGMENT, info.fragment);
-            i.putExtra(EXTRA_SHOW_FRAGMENT_TITLE_TEXT, info.parentTitle);
+            i.putExtra(EXTRA_SHOW_FRAGMENT_TITLE, info.parentTitle);
+            i.putExtra(SearchPopulator.EXTRA_PREF_KEY, info.key);
             i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(i);
         }
