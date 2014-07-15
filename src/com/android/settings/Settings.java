@@ -85,12 +85,9 @@ import com.android.settings.blacklist.BlacklistSettings;
 import com.android.settings.bluetooth.BluetoothEnabler;
 import com.android.settings.bluetooth.BluetoothSettings;
 import com.android.settings.cyanogenmod.ButtonSettings;
-<<<<<<< HEAD
-=======
 import com.android.settings.cyanogenmod.LockscreenInterface;
 import com.android.settings.cyanogenmod.NavBar;
 import com.android.settings.cyanogenmod.NavRing;
->>>>>>> cfce1a192b1ad59c607284fc537f1664f257f682
 import com.android.settings.cyanogenmod.PerformanceSettings;
 import com.android.settings.kylinmod.KylinSettings;
 import com.android.settings.cyanogenmod.superuser.PolicyNativeFragment;
