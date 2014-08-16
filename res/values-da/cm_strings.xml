@@ -77,6 +77,7 @@
   <string name="profile_networkmode_2g3g">2G/3G</string>
   <string name="settings_search_action_bar_button">Søg</string>
   <string name="settings_search_autocompleteview_hint">Søgeindstillinger</string>
+  <string name="settings_search_loading_text">Indlæser søgedata\u2026</string>
   <string name="profile_connectionoverrides_title">Tilsidesættelser for forbindelse</string>
   <string name="profile_volumeoverrides_title">Tilsidesættelser for lydstyrke</string>
   <string name="connection_state_disabled">Deaktivér</string>
@@ -90,6 +91,8 @@
   <string name="profile_trigger_connect">Ved tilslutning</string>
   <string name="profile_trigger_disconnect">Ved frakobling</string>
   <string name="profile_trigger_notrigger">Ingen udløser</string>
+  <string name="profile_trigger_a2dp_connect">Ved tilslutning til A2DP</string>
+  <string name="profile_trigger_a2dp_disconnect">Ved frakobling fra A2DP</string>
   <string name="sound_mode">Meddelelsestilstand</string>
   <string name="ringer_mode">Ringetilstand</string>
   <string name="lights_mode">Lystilstand</string>
@@ -192,6 +195,8 @@
   <string name="battery_light_low_color_title">Lavt batteriniveau</string>
   <string name="battery_light_medium_color_title">Oplader</string>
   <string name="battery_light_full_color_title">Fuldt opladt</string>
+  <string name="lockpattern_reset_button">Nulstil mønster</string>
+  <string name="lockpattern_settings_reset_summary">Angiv den primære e-mail-konto og tilhørende adgangskode for at nulstille mønsterlåsen</string>
   <string name="lockpattern_settings_enable_error_path_title">Vis mønsterfejl</string>
   <string name="lockpattern_settings_enable_dots_title">Vis mønsterprikker</string>
   <string name="screen_security_category">Skærmsikkerhed</string>
@@ -422,10 +427,12 @@ Yderligere indstillinger er tilgængelige ved at trykke længe på en linje. Ved
   <string name="pref_force_highend_gfx_summary">Aktiverer nogle rigtig flotte visuelle effekter, såsom transparent status-/navigationslinje (kræver genstart)</string>
   <string name="kill_app_longpress_back">Luk app på knappen Tilbage</string>
   <string name="kill_app_longpress_back_summary">Luk kørende app ved langt tryk på knappen Tilbage</string>
+  <string name="changelog_title">Ændringslog</string>
   <string name="changelog_loading">Indlæser ændringslog...</string>
   <string name="changelog_error">Kunne ikke indlæse ændringsloggen</string>
   <string name="changelog_unknown">Ukendt</string>
   <string name="changelog_version">Version</string>
+  <string name="contributor_cloud_title">Bidragydere</string>
   <string name="cmupdate_settings_title">CyanogenMod-opdateringer</string>
   <string name="cmupdate_settings_summary">Tjek for, se eller installér tilgængelige opdateringer</string>
   <string name="advanced_settings_title">Avanceret</string>
@@ -505,8 +512,11 @@ Yderligere indstillinger er tilgængelige ved at trykke længe på en linje. Ved
   <string name="collapse_on_dismiss_if_empty_summary">Luk meddelelsespanelet, når den sidste meddelelse fjernes</string>
   <string name="collapse_on_dismiss_if_no_clearable_summary">Luk meddelelsespanel, når den sidste meddelelse, som kan fjernes, fjernes</string>
   <string name="double_tap_to_wake_title">Dobbelttryk for at vække</string>
+  <string name="proximity_wake_title">Undgå utilsigtet vækning</string>
+  <string name="proximity_wake_summary">Check nærhedsføleren før skærmen vækkes</string>
   <string name="category_quick_access">Hurtig Adgangs-ribbon</string>
   <string name="title_quick_access">Vis i meddelelsespanel</string>
+  <string name="title_quick_access_size">Størrelsen på båndet</string>
   <string name="title_quick_access_linked">Linket layout</string>
   <string name="summary_quick_access_linked">Brug de samme fliser og layout som panelet Hurtig-Indstillinger</string>
   <string name="font_size_sample">Eksempel</string>
@@ -636,7 +646,7 @@ Yderligere indstillinger er tilgængelige ved at trykke længe på en linje. Ved
   <string name="hardware_keys_action_search">Søgeassistent</string>
   <string name="hardware_keys_action_voice_search">Stemmesøgning</string>
   <string name="hardware_keys_action_in_app_search">Søgning i app</string>
-  <string name="hardware_keys_action_launch_camera">Start Kamera</string>
+  <string name="hardware_keys_action_launch_camera">Start kamera</string>
   <string name="power_end_call_title">Afslut opkald</string>
   <string name="power_end_call_summary">At trykke på strømknappen slutter det aktuelle opkald</string>
   <string name="button_wake_title">Vågn op</string>
@@ -676,6 +686,10 @@ Yderligere indstillinger er tilgængelige ved at trykke længe på en linje. Ved
   <string name="setting_lockscreen_background">Anvender baggrund</string>
   <string name="confirm_delete_apn">APN\'en vil blive slettet.</string>
   <string name="status_bar_title">Statuslinje</string>
+  <string name="status_bar_clock_title">Ur-tema</string>
+  <string name="status_bar_clock_style_default">Standard</string>
+  <string name="status_bar_clock_style_center">Centreret</string>
+  <string name="status_bar_clock_style_hidden">Skjult</string>
   <string name="status_bar_battery_title">Batteristatus</string>
   <string name="status_bar_style_icon_portrait">Ikon portræt</string>
   <string name="status_bar_style_icon_landscape">Ikon landskab</string>
@@ -708,6 +722,8 @@ Yderligere indstillinger er tilgængelige ved at trykke længe på en linje. Ved
   <string name="battery_info_status_charging_dock_ac">(DockAC)</string>
   <string name="battery_info_status_charging_dock_usb">(DockUSB)</string>
   <string name="menu_stats_reset">Nulstil</string>
+  <string name="cmlicense_title">Juridisk information for CyanogenMod</string>
+  <string name="settings_cmlicense_activity_title">Juridisk information for CyanogenMod</string>
   <string name="settings_cmlicense_activity_unreachable">Du har ingen dataforbindelse. Gå til %s fra en computer tilsluttet Internettet for at vise denne information nu.</string>
   <string name="stylus_icon_enabled_title">Vis ikon ved brug af pen</string>
   <string name="stylus_icon_enabled_summary">Vis markøren, når pennen benyttes</string>
@@ -873,6 +889,11 @@ Yderligere indstillinger er tilgængelige ved at trykke længe på en linje. Ved
   <string name="menu_hidden_apps_reset_lock">Nulstil mønster lås</string>
   <string name="protected_apps">Beskyttede apps</string>
   <string name="saving_protected_components">Gemmer komponenttilstand\u2026</string>
+  <string name="pa_login_username_hint">Brugernavn (e-mail)</string>
+  <string name="pa_login_password_hint">Adgangskode</string>
+  <string name="pa_login_submit_button">Log ind</string>
+  <string name="pa_login_checking_password">Kontrollerer konto\u2026</string>
+  <string name="pa_login_incorrect_login">Login var forkert</string>
   <string name="keep_screen_on_summary_cm">Skærmen vil aldrig gå i dvale, når strøm er tilsluttet</string>
   <plurals name="show_dev_countdown_cm">
     <item quantity="one">Du er nu <xliff:g id="step_count">%1$d</xliff:g> skridt væk fra at aktivere Indstillinger for udviklere.</item>
@@ -882,4 +903,9 @@ Yderligere indstillinger er tilgængelige ved at trykke længe på en linje. Ved
   <string name="show_dev_already_cm">Du behøver ikke gøre dette, Indstillinger for udviklere er allerede aktiveret.</string>
   <string name="enable_adb_cm">Android-fejlfinding</string>
   <string name="enable_adb_summary_cm">Aktivér ADB-grænsefladen</string>
+  <string name="spam_added_title">Tilføjet %1$s</string>
+  <string name="spam_last_blocked_title">Sidste blokerede %1$s</string>
+  <string name="block_notifications_title">Filtrere meddelelser</string>
+  <string name="block_notifications_summary">Administrere ignoreret underretninger og filtre</string>
+  <string name="no_filters_title">Der er ingen filtre</string>
 </resources>

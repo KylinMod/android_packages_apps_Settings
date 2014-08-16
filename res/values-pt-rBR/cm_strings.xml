@@ -91,6 +91,8 @@
   <string name="profile_trigger_connect">Ao conectar</string>
   <string name="profile_trigger_disconnect">Ao desconectar</string>
   <string name="profile_trigger_notrigger">Sem disparador</string>
+  <string name="profile_trigger_a2dp_connect">Ao ligar A2DP</string>
+  <string name="profile_trigger_a2dp_disconnect">Ao desligar A2DP</string>
   <string name="sound_mode">Modo de notificação</string>
   <string name="ringer_mode">Modo de toque</string>
   <string name="lights_mode">Modo de luzes</string>
@@ -193,6 +195,8 @@
   <string name="battery_light_low_color_title">Bateria baixa</string>
   <string name="battery_light_medium_color_title">Carregando</string>
   <string name="battery_light_full_color_title">Totalmente carregada</string>
+  <string name="lockpattern_reset_button">Redefinir padrão</string>
+  <string name="lockpattern_settings_reset_summary">Introduza a conta de e-mail principal e a senha associada para redefinir o bloqueio padrão</string>
   <string name="lockpattern_settings_enable_error_path_title">Exibir erro no padrão</string>
   <string name="lockpattern_settings_enable_dots_title">Exibir pontos no padrão</string>
   <string name="screen_security_category">Segurança de tela</string>
@@ -508,8 +512,11 @@ Opções adicionais estão disponíveis ao pressionar continuamente uma linha. A
   <string name="collapse_on_dismiss_if_empty_summary">Fechar bandeja de notificação ao remover a última notificação</string>
   <string name="collapse_on_dismiss_if_no_clearable_summary">Fechar bandeja de notificação ao remover a última notificação removível</string>
   <string name="double_tap_to_wake_title">Toque duplo para acordar</string>
+  <string name="proximity_wake_title">Evitar despertar acidental</string>
+  <string name="proximity_wake_summary">Verifique o sensor de proximidade antes de despertar a tela</string>
   <string name="category_quick_access">Barra de Acesso Rápido</string>
   <string name="title_quick_access">Exibir na gaveta</string>
+  <string name="title_quick_access_size">Tamanho da barra</string>
   <string name="title_quick_access_linked">Layout padrão</string>
   <string name="summary_quick_access_linked">Usar os mesmos botões e layout do painel de Configurações Rápidas</string>
   <string name="font_size_sample">Amostra</string>
@@ -639,7 +646,7 @@ Opções adicionais estão disponíveis ao pressionar continuamente uma linha. A
   <string name="hardware_keys_action_search">Assistente de busca</string>
   <string name="hardware_keys_action_voice_search">Busca por voz</string>
   <string name="hardware_keys_action_in_app_search">Busca dentro do app</string>
-  <string name="hardware_keys_action_launch_camera">Abrir câmera</string>
+  <string name="hardware_keys_action_launch_camera">Iniciar a câmera</string>
   <string name="power_end_call_title">Encerrar chamada</string>
   <string name="power_end_call_summary">Pressionar o botão liga/desliga encerrará a chamada em andamento</string>
   <string name="button_wake_title">Acordar</string>
@@ -679,7 +686,10 @@ Opções adicionais estão disponíveis ao pressionar continuamente uma linha. A
   <string name="setting_lockscreen_background">Aplicando plano de fundo</string>
   <string name="confirm_delete_apn">O APN vai ser removido.</string>
   <string name="status_bar_title">Barra de status</string>
-  <string name="status_bar_show_clock_title">Mostrar relógio</string>
+  <string name="status_bar_clock_title">Estilo do relógio</string>
+  <string name="status_bar_clock_style_default">Padrão</string>
+  <string name="status_bar_clock_style_center">Centro</string>
+  <string name="status_bar_clock_style_hidden">Oculto</string>
   <string name="status_bar_battery_title">Estilo do status da bateria</string>
   <string name="status_bar_style_icon_portrait">Ícone retrato</string>
   <string name="status_bar_style_icon_landscape">Ícone paisagem</string>
@@ -879,6 +889,11 @@ Opções adicionais estão disponíveis ao pressionar continuamente uma linha. A
   <string name="menu_hidden_apps_reset_lock">Redefinir o bloqueio padrão</string>
   <string name="protected_apps">Aplicativos protegidos</string>
   <string name="saving_protected_components">Salvando o estado dos componentes\u2026</string>
+  <string name="pa_login_username_hint">Nome de usuário (e-mail)</string>
+  <string name="pa_login_password_hint">Senha</string>
+  <string name="pa_login_submit_button">Entrar</string>
+  <string name="pa_login_checking_password">Verificando a conta\u2026</string>
+  <string name="pa_login_incorrect_login">Login incorreto</string>
   <string name="keep_screen_on_summary_cm">Tela nunca dormirá enquanto estiver plugado</string>
   <plurals name="show_dev_countdown_cm">
     <item quantity="one">Você está a <xliff:g id="step_count">%1$d</xliff:g> passo de ativar as configurações de desenvolvimento.</item>
@@ -888,4 +903,9 @@ Opções adicionais estão disponíveis ao pressionar continuamente uma linha. A
   <string name="show_dev_already_cm">Não é preciso, pois as configurações de desenvolvedor já estão ativadas.</string>
   <string name="enable_adb_cm">Depuração Android</string>
   <string name="enable_adb_summary_cm">Ativar a interface de Ponte de Depuração Android (adb)</string>
+  <string name="spam_added_title">Adicionado %1$s</string>
+  <string name="spam_last_blocked_title">Última bloqueada %1$s</string>
+  <string name="block_notifications_title">Filtrar notificações</string>
+  <string name="block_notifications_summary">Gerenciar notificações e filtros ignorados</string>
+  <string name="no_filters_title">Nenhum filtro definido</string>
 </resources>

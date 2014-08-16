@@ -43,7 +43,7 @@
   <string name="profiles_add">追加</string>
   <string name="profile_menu_delete">削除</string>
   <string name="profile_settings_title">プロファイル</string>
-  <string name="profile_empty_list_profiles_off">システムのプロファイルを設定または使用するにはプロファイルをON</string>
+  <string name="profile_empty_list_profiles_off">システムのプロファイルを設定または使用するには、プロファイルをONにしてください。</string>
   <string name="profile_trigger_configure">トリガーを設定</string>
   <string name="profile_triggers">トリガー</string>
   <string name="profile_trigger_filter_all">すべてのトリガー</string>
@@ -91,6 +91,8 @@
   <string name="profile_trigger_connect">接続時</string>
   <string name="profile_trigger_disconnect">切断時</string>
   <string name="profile_trigger_notrigger">トリガーとして使用しない</string>
+  <string name="profile_trigger_a2dp_connect">A2DP接続時</string>
+  <string name="profile_trigger_a2dp_disconnect">A2DP切断時</string>
   <string name="sound_mode">通知モード</string>
   <string name="ringer_mode">着信モード</string>
   <string name="lights_mode">ライトモード</string>
@@ -128,7 +130,7 @@
   <string name="link_volume_mutes">サイレントモードを通知音に反映する</string>
   <string name="volume_keys_control_ring_stream">音量ボタンで着信音の音量をコントロールする</string>
   <string name="ring_mode_title">着信モード</string>
-  <string name="ring_mode_normal">標準</string>
+  <string name="ring_mode_normal">通常</string>
   <string name="ring_mode_vibrate">バイブレーション</string>
   <string name="ring_mode_mute">ミュート</string>
   <string name="volume_overlay_title">音量パネルのスタイル</string>
@@ -138,7 +140,7 @@
   <string name="volume_overlay_none">なし</string>
   <string name="automation_effects_title">自動制御と効果</string>
   <string name="notification_convert_sound_to_vibration_title">通知のバイブレーション</string>
-  <string name="notification_convert_sound_to_vibration_summary">バイブレーションモードで、それぞれのアプリの設定に関係なく、すべての通知で振動する</string>
+  <string name="notification_convert_sound_to_vibration_summary">バイブレーションモードで、それぞれのアプリの設定に関わらずに、すべての通知で振動する</string>
   <string name="notification_vibrate_during_calls_title">通話中のバイブレーション</string>
   <string name="notification_vibrate_during_calls_summary">通話中はおだやかに振動する</string>
   <string name="volume_adjust_sounds_enable_title">音量調整の音</string>
@@ -193,6 +195,8 @@
   <string name="battery_light_low_color_title">バッテリー残量低下</string>
   <string name="battery_light_medium_color_title">充電中</string>
   <string name="battery_light_full_color_title">充電完了</string>
+  <string name="lockpattern_reset_button">パターンをリセット</string>
+  <string name="lockpattern_settings_reset_summary">パターンをリセットするにはプライマリメールアカウントと関連付けられているパスワードを入力してください</string>
   <string name="lockpattern_settings_enable_error_path_title">エラーのパターンを表示する</string>
   <string name="lockpattern_settings_enable_dots_title">パターンのドットを表示する</string>
   <string name="screen_security_category">画面のセキュリティ</string>
@@ -204,7 +208,7 @@
   <string name="unlock_camera_unlock_title">カメラボタンでロック解除</string>
   <string name="unlock_camera_unlock_summary">カメラボタンを押して端末のロックを解除する</string>
   <string name="unlock_quick_unlock_control_title">クイックロック解除</string>
-  <string name="unlock_quick_unlock_control_summary">正しいPIN/パスワードが入力された場合は自動的にロックを解除する</string>
+  <string name="unlock_quick_unlock_control_summary">正しいPIN/パスワードが入力されたときは自動的にロックを解除する</string>
   <string name="unlock_buttons_disabled_by_security">ロック画面は保護されています</string>
   <string name="lockscreen_widgets_category_title">ウィジェット</string>
   <string name="lockscreen_maximize_widgets_title">ウィジェットを最大化</string>
@@ -355,7 +359,7 @@
   <string name="root_access_adb">ADBのみ</string>
   <string name="root_access_all">アプリとADB</string>
   <string name="update_recovery_title">CMリカバリーをアップデート</string>
-  <string name="update_recovery_summary">システムアップデートインストール時にリカバリーをアップデートする</string>
+  <string name="update_recovery_summary">システムアップデートをインストールするときにリカバリーをアップデートする</string>
   <string name="ok">OK</string>
   <string name="quiet_hours_title">おやすみモード</string>
   <string name="quiet_hours_summary">端末をサイレントモードにする時間を設定する</string>
@@ -392,11 +396,11 @@
   <string name="anonymous_statistics_title">CyanogenModの統計情報</string>
   <string name="anonymous_statistics_summary">匿名の統計のレポートに同意してCyanogenModの改善を支援する</string>
   <string name="anonymous_statistics_warning_title">情報</string>
-  <string name="anonymous_statistics_warning">CyanogenModの統計情報に同意すると、端末間のユニークインストール回数を調べるためにCyanogenModの開発者へ非個人情報の送信を許可します。送信される情報にはユニークIDが含まれますが、プライバシーや個人データが危険にさらされることはありません。データは起動時に送信されます。\n\n送信されるデータの見本は、「データをプレビュー」をタップして確認できます。</string>
+  <string name="anonymous_statistics_warning">CyanogenModの統計情報に同意すると、端末間のユニークインストール回数を調べるためにCyanogenModの開発者へ非個人情報の送信を許可します。送信される情報にはユニークIDが含まれますが、プライバシーや個人データが危険にさらされることはありません。データはブート時に送信されます。\n\n送信されるデータの見本は、「データをプレビュー」をタップして確認できます。</string>
   <string name="enable_reporting_title">レポートを有効化</string>
   <string name="preview_data_title">データをプレビュー</string>
   <string name="view_stats_title">統計情報を表示</string>
-  <string name="anonymous_learn_more">もっと詳しく</string>
+  <string name="anonymous_learn_more">詳細</string>
   <string name="anonymous_notification_desc">KylinModの統計情報を有効または無効にする</string>
   <string name="preview_id_title">ユニークID</string>
   <string name="preview_device_title">端末</string>
@@ -416,8 +420,8 @@
   <string name="performance_settings_title">パフォーマンス</string>
   <string name="performance_settings_warning_title">注意して進めてください</string>
   <string name="performance_settings_warning">これらの設定は実験的で、あらゆる変更が不安定性、クラッシュ、データの損失、ハードウェア障害を引き起こす原因になる可能性があります。\n\nこれらの設定をデフォルトから変更した場合には、バグレポートを提出しないようにお願いします。</string>
-  <string name="performance_set_on_boot">起動時に設定</string>
-  <string name="performance_set_on_boot_summary">適用した設定を起動時に復元する</string>
+  <string name="performance_set_on_boot">ブート時に設定</string>
+  <string name="performance_set_on_boot_summary">適用した設定をブート時に復元する</string>
   <string name="processor_title">プロセッサ</string>
   <string name="cpu_cur_freq_title">現在のCPU周波数</string>
   <string name="cpu_governors_title">CPUガバナ</string>
@@ -511,7 +515,7 @@
   <string name="adb_notify_summary">USBデバッグ接続時に通知を表示する</string>
   <string name="adb_over_network">ネットワーク経由のADB</string>
   <string name="adb_over_network_summary">ネットワークインターフェース（Wi-Fi、USBネットワーク）経由でのTCP/IPデバッグを有効にします。この設定は再起動時にリセットされます。</string>
-  <string name="adb_over_network_warning">警告: ネットワーク経由でのADBを有効にすると、あなたの携帯電話はデータネットワークを含むすべての接続しているネットワークから侵入できるようになります。\n\nこの機能は信頼できるネットワークに接続している場合にのみ使用して下さい。\n\nこの機能を本当に有効にしますか？</string>
+  <string name="adb_over_network_warning">警告: ネットワーク経由でのADBを有効にすると、あなたの携帯電話はデータネットワークを含むすべての接続しているネットワークから侵入できるようになります。\n\nこの機能は信頼できるネットワークに接続しているときにのみ使用して下さい。\n\nこの機能を本当に有効にしますか？</string>
   <string name="device_hostname">端末のホスト名</string>
   <string name="notification_drawer_title">通知ドロワー</string>
   <string name="notification_drawer_collapse_on_dismiss_title">自動で閉じる動作</string>
@@ -522,8 +526,11 @@
   <string name="collapse_on_dismiss_if_empty_summary">最後の通知を削除した後に閉じる</string>
   <string name="collapse_on_dismiss_if_no_clearable_summary">最後の削除可能な通知を削除した後に閉じる</string>
   <string name="double_tap_to_wake_title">ダブルタップで起動</string>
+  <string name="proximity_wake_title">誤作動を防止</string>
+  <string name="proximity_wake_summary">画面をスリープ解除する前に接近センサーを確認する</string>
   <string name="category_quick_access">クイックアクセスリボン</string>
-  <string name="title_quick_access">通知ドロワーに表示</string>
+  <string name="title_quick_access">ドロワーに表示</string>
+  <string name="title_quick_access_size">リボンバーのサイズ</string>
   <string name="title_quick_access_linked">レイアウトをリンク</string>
   <string name="summary_quick_access_linked">クイック設定パネルと同じタイルとレイアウトを使用する</string>
   <string name="font_size_sample">サンプル</string>
@@ -545,7 +552,7 @@
   <string name="lockscreen_battery_status_charging">充電中のみ</string>
   <string name="lockscreen_battery_status_alwayson">常に表示</string>
   <string name="lockscreen_battery_status_alwaysoff">表示しない</string>
-  <string name="lockscreen_target_info">ショートカットを割り当てるにはスライダーをターゲットにドラッグします</string>
+  <string name="lockscreen_target_info">ショートカットを割り当てるターゲットにスライダーをドラッグしてください</string>
   <string name="lockscreen_target_title">スライダーショートカット</string>
   <string name="lockscreen_target_summary">ロック画面のカスタムショートカットを表示または変更する</string>
   <string name="lockscreen_target_reset">ロック画面のショートカットをデフォルトにリセットしました</string>
@@ -607,7 +614,7 @@
   <string name="navigation_bar_menu_editable">編集可能</string>
   <string name="navigation_bar_menu_locked">ロックされています</string>
   <string name="navigation_bar_arrow_keys_title">入力中の矢印キー</string>
-  <string name="navigation_bar_arrow_keys_summary">入力中は左右のカーソルボタンを表示する</string>
+  <string name="navigation_bar_arrow_keys_summary">入力中は右と左のカーソルボタンを表示する</string>
   <string name="navigation_ring_title">クイック起動ショートカット</string>
   <string name="navring_target_reset_message">ユーザーが作成したすべてのナビゲーションバーのショートカットを削除してデフォルトに戻しますか？</string>
   <string name="navring_target_reset">ナビゲーションバーのショートカットをデフォルトにリセットしました</string>
@@ -630,7 +637,7 @@
   <string name="expanded_desktop_disabled">無効</string>
   <string name="expanded_desktop_status_bar">ステータスバーを表示する</string>
   <string name="expanded_desktop_no_status_bar">ステータスバーを表示しない</string>
-  <string name="expanded_desktop_system_bars_visibility">ロック画面では無効</string>
+  <string name="expanded_desktop_system_bars_visibility">ロック画面では無効にする</string>
   <string name="expanded_desktop_system_bars_visibility_summary">拡張デスクトップモードでもロック画面ではステータスバーとナビゲーションバーを表示する</string>
   <string name="power_menu_profiles_title">プロファイルの切り替え</string>
   <string name="power_menu_airplane_title">機内モード</string>
@@ -672,7 +679,7 @@
   <string name="volbtn_cursor_control_off">無効</string>
   <string name="volbtn_cursor_control_on">音量を上げる/下げるボタンでカーソルを左/右に移動する</string>
   <string name="volbtn_cursor_control_on_reverse">音量を上げる/下げるボタンでカーソルを右/左に移動する</string>
-  <string name="swap_volume_buttons_title">音量ボタンを入れ替える</string>
+  <string name="swap_volume_buttons_title">再配置</string>
   <string name="swap_volume_buttons_summary">画面回転時に音量ボタンを入れ替える</string>
   <string name="button_backlight_title">バックライト</string>
   <string name="button_backlight_enabled">ボタンを点灯する</string>
@@ -693,7 +700,10 @@
   <string name="setting_lockscreen_background">背景を適応しています</string>
   <string name="confirm_delete_apn">APNを削除します。</string>
   <string name="status_bar_title">ステータスバー</string>
-  <string name="status_bar_show_clock_title">時計を表示</string>
+  <string name="status_bar_clock_title">時計のスタイル</string>
+  <string name="status_bar_clock_style_default">デフォルト</string>
+  <string name="status_bar_clock_style_center">中央</string>
+  <string name="status_bar_clock_style_hidden">表示しない</string>
   <string name="status_bar_battery_title">電池の状態のスタイル</string>
   <string name="status_bar_style_icon_portrait">縦向きのアイコン</string>
   <string name="status_bar_style_icon_landscape">横向きのアイコン</string>
@@ -894,12 +904,22 @@
   <string name="menu_hidden_apps_reset_lock">パターンロックをリセット</string>
   <string name="protected_apps">アプリの保護</string>
   <string name="saving_protected_components">コンポーネントの状態を保存中\u2026</string>
+  <string name="pa_login_username_hint">ユーザー名（メール）</string>
+  <string name="pa_login_password_hint">パスワード</string>
+  <string name="pa_login_submit_button">サインイン</string>
+  <string name="pa_login_checking_password">アカウントを確認中\u2026</string>
+  <string name="pa_login_incorrect_login">ログインできませんでした</string>
   <string name="keep_screen_on_summary_cm">接続中は画面をスリープにしない</string>
   <plurals name="show_dev_countdown_cm">
     <item quantity="other">開発者向けオプションが有効になるまであと<xliff:g id="step_count">%1$d</xliff:g>ステップです。</item>
   </plurals>
   <string name="show_dev_on_cm">開発者向けオプションが有効になりました。</string>
-  <string name="show_dev_already_cm">必要ありません、既に開発者向けオプションを有効にしています。</string>
+  <string name="show_dev_already_cm">必要ありません、開発者向けオプションは既に有効になっています。</string>
   <string name="enable_adb_cm">Androidデバッグ</string>
-  <string name="enable_adb_summary_cm">Android Debug Bridge（adb）インターフェースを有効にする</string>
+  <string name="enable_adb_summary_cm">Androidデバッグブリッジ（ADB）インターフェースを有効にする</string>
+  <string name="spam_added_title">%1$sを追加しました</string>
+  <string name="spam_last_blocked_title">%1$sを前回ブロックしました</string>
+  <string name="block_notifications_title">通知のフィルタリング</string>
+  <string name="block_notifications_summary">無視する通知やフィルターを管理する</string>
+  <string name="no_filters_title">フィルターが設定されていません</string>
 </resources>

@@ -91,6 +91,8 @@
   <string name="profile_trigger_connect">Saat terhubung</string>
   <string name="profile_trigger_disconnect">Saat diputuskan</string>
   <string name="profile_trigger_notrigger">Tidak ada trigger</string>
+  <string name="profile_trigger_a2dp_connect">Pada saat A2DP terhubung</string>
+  <string name="profile_trigger_a2dp_disconnect">Pada saat A2DP diputuskan</string>
   <string name="sound_mode">Modus pemberitahuan</string>
   <string name="ringer_mode">Modus dering</string>
   <string name="lights_mode">Mode lampu</string>
@@ -193,6 +195,8 @@
   <string name="battery_light_low_color_title">Baterai lemah</string>
   <string name="battery_light_medium_color_title">Pengisian Daya</string>
   <string name="battery_light_full_color_title">Terisi penuh</string>
+  <string name="lockpattern_reset_button">Reset pola</string>
+  <string name="lockpattern_settings_reset_summary">Masukkan email akun utama dan password yang terkait untuk me-reset kunci pola</string>
   <string name="lockpattern_settings_enable_error_path_title">Tunjukkan pola kesalahan</string>
   <string name="lockpattern_settings_enable_dots_title">Tunjukkan titik-titik pola</string>
   <string name="screen_security_category">Keamanan layar</string>
@@ -507,8 +511,11 @@ Pilihan tambahan tersedia dengan menekan-lama sebuah garis. Dengan memilih \'Uba
   <string name="collapse_on_dismiss_if_empty_summary">Tutup setelah menghapus notifikasi terakhir</string>
   <string name="collapse_on_dismiss_if_no_clearable_summary">Tutup setelah menghapus notifikasi dapat dihapus terakhir</string>
   <string name="double_tap_to_wake_title">Double-tap untuk bangun</string>
+  <string name="proximity_wake_title">Mencegah bangun yang tidak disengaja</string>
+  <string name="proximity_wake_summary">Periksa sensor proximity sebelum membangunkan layar</string>
   <string name="category_quick_access">Ribbon Quick Access</string>
   <string name="title_quick_access">Tampilkan di drawer</string>
+  <string name="title_quick_access_size">Ukuran bar pita</string>
   <string name="title_quick_access_linked">Tata letak terkait</string>
   <string name="summary_quick_access_linked">Gunakan kotak dan tata letak yang sama sesuai panel Pengaturan Cepat</string>
   <string name="font_size_sample">Contoh</string>
@@ -638,7 +645,7 @@ Pilihan tambahan tersedia dengan menekan-lama sebuah garis. Dengan memilih \'Uba
   <string name="hardware_keys_action_search">Search assistant</string>
   <string name="hardware_keys_action_voice_search">Pencarian suara</string>
   <string name="hardware_keys_action_in_app_search">Pencarian di dalam app</string>
-  <string name="hardware_keys_action_launch_camera">Luncurkan Kamera</string>
+  <string name="hardware_keys_action_launch_camera">Buka kamera</string>
   <string name="power_end_call_title">Akhir panggilan</string>
   <string name="power_end_call_summary">Menekan tombol power akan mengakhiri panggilan aktif</string>
   <string name="button_wake_title">Bangun</string>
@@ -678,7 +685,10 @@ Pilihan tambahan tersedia dengan menekan-lama sebuah garis. Dengan memilih \'Uba
   <string name="setting_lockscreen_background">Menerapkan latar belakang</string>
   <string name="confirm_delete_apn">APN akan dihapus.</string>
   <string name="status_bar_title">Status bar</string>
-  <string name="status_bar_show_clock_title">Tampilkan jam</string>
+  <string name="status_bar_clock_title">Gaya jam</string>
+  <string name="status_bar_clock_style_default">Standar</string>
+  <string name="status_bar_clock_style_center">Tengah</string>
+  <string name="status_bar_clock_style_hidden">Tersembunyi</string>
   <string name="status_bar_battery_title">Gaya status baterai</string>
   <string name="status_bar_style_icon_portrait">Ikon potret</string>
   <string name="status_bar_style_icon_landscape">Ikon lanskap</string>
@@ -878,6 +888,11 @@ Pilihan tambahan tersedia dengan menekan-lama sebuah garis. Dengan memilih \'Uba
   <string name="menu_hidden_apps_reset_lock">Reset pola kunci</string>
   <string name="protected_apps">Aplikasi yang di lindungi</string>
   <string name="saving_protected_components">Menyimpan kondisi komponen\u2026</string>
+  <string name="pa_login_username_hint">Nama pengguna (email)</string>
+  <string name="pa_login_password_hint">Sandi</string>
+  <string name="pa_login_submit_button">Masuk</string>
+  <string name="pa_login_checking_password">Memeriksa account\u2026</string>
+  <string name="pa_login_incorrect_login">Login tidak benar</string>
   <string name="keep_screen_on_summary_cm">Layar tidak akan pernah tidur saat terpasang</string>
   <plurals name="show_dev_countdown_cm">
     <item quantity="other">Anda sekarang <xliff:g id="step_count">%1$d</xliff:g> beberapa langkah dari mengaktifkan opsi pengembang.</item>
@@ -886,4 +901,9 @@ Pilihan tambahan tersedia dengan menekan-lama sebuah garis. Dengan memilih \'Uba
   <string name="show_dev_already_cm">Tidak perlu, Anda telah mengaktifkan opsi pengembang.</string>
   <string name="enable_adb_cm">Android debugging</string>
   <string name="enable_adb_summary_cm">Aktifkan antarmuka Android Debug Bridge (adb)</string>
+  <string name="spam_added_title">Ditambahkan %1$s</string>
+  <string name="spam_last_blocked_title">Terakhir diblokir %1$s</string>
+  <string name="block_notifications_title">Notifikasi penyaringan</string>
+  <string name="block_notifications_summary">Kelola pemberitahuan yang diabaikan dan filter</string>
+  <string name="no_filters_title">Belum ada penyaring</string>
 </resources>
