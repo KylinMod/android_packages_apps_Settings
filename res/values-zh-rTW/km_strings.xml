@@ -20,17 +20,13 @@
     <string name="kylin_settings_title">麒麟控</string>
     <string name="category_others_title">其它</string>
 
-    <!-- Network traffic -->
-    <string name="network_traffic_title">網絡流量</string>
-    <string name="show_network_traffic_state">狀態欄流量監控</string>
-    <string name="show_network_traffic_unit">單元顯示</string>
-    <string name="show_network_traffic_frequency">更新間隔</string>
-    <string name="show_network_traffic_disable">關閉</string>
-    <string name="show_network_traffic_up">僅顯示上傳速度</string>
-    <string name="show_network_traffic_down">僅顯示下載速度</string>
-    <string name="show_network_traffic_all">顯示上傳和下載速度</string>
-    <string name="show_network_traffic_bit">Bit/s</string>
-    <string name="show_network_traffic_byte">Byte/s</string>
+    <!-- show network speed -->
+    <string name="show_network_speed_title">狀態欄網速</string>
+    <string name="show_network_speed_summary">在狀態欄顯示當前網速</string>
+    <string name="status_bar_network_traffic_style_disable">禁用</string>
+    <string name="status_bar_network_traffic_style_up">顯示上傳速度</string>
+    <string name="status_bar_network_traffic_style_down">顯示下載速度</string>
+    <string name="status_bar_network_traffic_style_all">顯示上傳和下載速度</string>
 
     <!-- Clock -->
     <string name="status_bar_clock_date_title">時鐘和日期</string>
